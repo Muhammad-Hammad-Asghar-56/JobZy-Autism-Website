@@ -1,0 +1,58 @@
+/* .battery_icon {
+  position: relative;
+  height: 20px;
+  width: 50px;
+  border: 2px solid #555;
+  border-radius: 5px;
+  background-color: #ffffff;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.battery_icon::after {
+  position: absolute;
+  content: "";
+  height: 60%;
+  width: 10px;
+  background-color: #555;
+  top: 50%;
+  right: -12px;
+  transform: translateY(-50%);
+  border-radius: 2px;
+}
+
+.charging_animation {
+  position: absolute;
+  height: 100%;
+  transition: width 1s ease-in-out;
+} */
+.battery_icon {
+  position: relative;
+  height: 20px;
+  width: 60px;
+  border: 2px solid #555;
+  border-radius: 5px;
+  background-color: #ffffff;
+  overflow: hidden;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.battery_icon::after {
+  position: absolute;
+  content: "";
+  height: 60%;
+  width: 6px;
+  background-color: #555;
+  top: 50%;
+  right: -8px;
+  transform: translateY(-50%);
+  border-radius: 2px;
+}
+
+.charging_animation {
+  position: absolute;
+  height: 100%;
+  transition: width 1s ease-in-out;
+}
