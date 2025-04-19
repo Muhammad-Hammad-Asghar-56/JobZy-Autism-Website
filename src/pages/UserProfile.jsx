@@ -23,7 +23,7 @@ const WorkExperienceCard = ({ job }) => {
   const toggleDescription = () => setIsExpanded(!isExpanded);
 
   return (
-    <div className="border px-4 mt-2 rounded-lg shadow-sm hover:shadow-xl transition-all duration-300 ease-in-out">
+    <div className="border p-4 mt-2 rounded-lg  transition-all duration-300 ease-in-out">
       <div className="flex items-center gap-2 justify-between">
         <div className="flex items-center">
           <span className="text-xl font-semibold mb-2 mr-2">

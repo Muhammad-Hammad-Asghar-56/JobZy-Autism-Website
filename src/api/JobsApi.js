@@ -69,9 +69,21 @@ const JobsApi = {
         } catch (error) {
 
         }
+    },
+    updateApplicantStatus: async (userId, jobId, employeeId, status) => {
+        try {
+            const response = await axios.put(`${endpoint}/udpateEmployeeStatus/`, {
+                userId, jobId, status, employeeId
+            }); // Await the response
+
+            if (response.status == 200) {
+                return;
+            }
+            throw new Error("Error");
+        } catch (error) {
+
+        }
     }
-
-
 };
 
 export default JobsApi;

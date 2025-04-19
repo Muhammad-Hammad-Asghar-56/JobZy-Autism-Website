@@ -11,31 +11,31 @@ const Footer = () => {
       { name: "Home", path: "/" },
       { name: "About Us", path: "/aboutus" },
       { name: "Contact Us", path: "/contact" },
+      { name: "Login/Sign Up", path: "/login" },
+      { name: "Learn Autism", path: "/Learn-autism" },
     ],
     ...(user?.companyName
       ? {
           "For Employers": [
-            { name: "Post a Job", path: "/dashboard/employer/post-job" },
-            {
-              name: "Manage Applications",
-              path: "/dashboard/employer/applications",
-            },
-            { name: "Autism Awareness", path: "/autism-awareness" },
+            { name: "Employer Dashboard", path: "/me" },
+            { name: "Post a Job", path: "/me/post-job" },
+            { name: "Manage Applications", path: "/employer/applications" },
+            { name: "Test Information", path: "/employer/test-information" },
+            { name: "Start Test", path: "/employer/start-test" },
+            { name: "Autism Awareness", path: "/Learn-autism" },
           ],
         }
       : {
           "For Job Seekers": [
             { name: "Browse Jobs", path: "/jobs" },
+            { name: "Applied Jobs", path: "/list-applied-jobs" },
+            { name: "Daily Tasks", path: "/dailyTask" },
+            { name: "Strength Test", path: "/me/test-strength" },
             { name: "Skill Development", path: "/resources" },
-            { name: "User Dashboard", path: "/dashboard/job-seeker" },
+            { name: "User Dashboard", path: "/me" },
           ],
         }),
-    // "Community & Support": [
-    //   { name: "Discussion Forums", path: "/community" },
-    //   { name: "Contact & Support", path: "/support" },
-    // ],
   };
-
   return (
     <footer className="bg-gray-900 text-gray-400">
       <div className="max-w-[1200px] mx-auto px-6 py-8 lg:py-12">
@@ -46,7 +46,7 @@ const Footer = () => {
             <Link to="/" className="flex items-center">
               <img src={logo} alt="Jobzy Logo" className="h-10 mr-3" />
               <span className="self-center text-2xl font-semibold text-white">
-                Jobzy
+                SpecWorks
               </span>
             </Link>
           </div>
@@ -88,7 +88,7 @@ const Footer = () => {
           </span>
           <div className="flex mt-4 sm:mt-0 space-x-5">
             <a
-              href="https://facebook.com"
+              href=""
               className="text-gray-400 hover:text-white"
               aria-label="Facebook page">
               <svg
@@ -104,7 +104,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              href="https://twitter.com"
+              href=""
               className="text-gray-400 hover:text-white"
               aria-label="Twitter page">
               <svg
@@ -120,7 +120,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              href="https://linkedin.com"
+              hhref=""
               className="text-gray-400 hover:text-white"
               aria-label="LinkedIn page">
               <svg
@@ -132,7 +132,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              href="https://github.com"
+              href=""
               className="text-gray-400 hover:text-white"
               aria-label="GitHub account">
               <svg

@@ -3,175 +3,209 @@ import React from "react";
 const LearnAutismContent = () => {
   return (
     <div className="w-full">
+      {/* Introduction to Autism Awareness */}
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-gray-700 mb-4">
-          Why Support Autistic Employees?
-        </h2>
-        <p className="text-gray-600 leading-relaxed">
-          Autistic individuals bring unique strengths to the workplace, such as
-          attention to detail, creative problem-solving, and loyalty. Creating
-          an inclusive environment not only benefits employees but also enhances
-          team dynamics and organizational success. By understanding and
-          accommodating their needs, employers can unlock their full potential.
+        <h1 className="text-3xl font-bold text-gray-700 mb-6">
+          Parent Awareness About Autism
+        </h1>
+
+        <p className="text-lg mb-6">
+          Autism Spectrum Disorder (ASD) is a neurodevelopmental condition that
+          affects how children interact, communicate, and process information.
+          The journey for parents starts with recognizing the early signs,
+          seeking a diagnosis, and then navigating through the different
+          treatment options and support systems. This guide is designed to help
+          parents understand the condition and provide the best care for their
+          children with autism.
         </p>
       </section>
 
+      {/* What is Autism? */}
       <section className="mb-8">
         <h2 className="text-2xl font-semibold text-gray-700 mb-4">
-          Key Strategies for Employers
+          What is Autism?
         </h2>
-        <ul className="list-disc pl-6 text-gray-600 space-y-2">
+        <p className="text-lg">
+          Autism Spectrum Disorder is a broad range of conditions that can
+          affect a child in various ways. Individuals with autism may exhibit
+          difficulties in communication, engage in repetitive behaviors, and
+          have sensory sensitivities. However, each person on the spectrum is
+          unique, and the severity of these symptoms can vary significantly.
+        </p>
+      </section>
+
+      {/* Early Signs of Autism */}
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold text-gray-700 mb-4">
+          Early Signs of Autism
+        </h2>
+        <p className="text-lg">
+          Early identification of autism is crucial for early intervention. Here
+          are some early signs to look for in children:
+        </p>
+        <ul className="list-disc pl-6 text-lg">
+          <li>Limited eye contact</li>
+          <li>Delayed speech or absence of babbling by 12 months</li>
+          <li>Repetitive behaviors such as hand-flapping or rocking</li>
           <li>
-            <strong>Clear Communication:</strong> Use direct, concise
-            instructions and provide written guidelines when possible to reduce
-            ambiguity.
+            Difficulty with social interactions, like not responding to their
+            name
+          </li>
+          <li>Intense focus on specific interests</li>
+        </ul>
+        <p className="mt-4 text-lg">
+          Recognizing these signs early can help in seeking a professional
+          diagnosis and securing early intervention services.
+        </p>
+      </section>
+
+      {/* The Importance of Early Intervention */}
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold text-gray-700 mb-4">
+          The Importance of Early Intervention
+        </h2>
+        <p className="text-lg">
+          Early intervention is essential for maximizing the developmental
+          potential of children with autism. By addressing communication
+          difficulties, behavioral challenges, and sensory sensitivities in the
+          early years, parents can help their children build the skills needed
+          for social engagement, learning, and daily activities.
+        </p>
+        <ul className="list-disc pl-6 text-lg">
+          <li>Promotes optimal brain development</li>
+          <li>Enhances social and communication skills</li>
+          <li>Improves behavioral management</li>
+          <li>Supports academic development</li>
+        </ul>
+        <p className="mt-4 text-lg">
+          Working with specialized therapists such as speech therapists,
+          occupational therapists, and behavior analysts can have a profound
+          impact on your child's development.
+        </p>
+      </section>
+
+      {/* Treatment Approaches */}
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold text-gray-700 mb-4">
+          Treatment Approaches
+        </h2>
+        <p className="text-lg">
+          There are several effective treatment approaches that can help
+          children with autism. These include:
+        </p>
+        <ul className="list-disc pl-6 text-lg">
+          <li>
+            <strong>Behavioral Therapy:</strong> Focuses on improving social,
+            communication, and learning skills.
           </li>
           <li>
-            <strong>Flexible Work Arrangements:</strong> Offer options like
-            remote work or adjusted hours to accommodate sensory needs or
-            routines.
+            <strong>Speech Therapy:</strong> Helps with communication skills,
+            especially for non-verbal children.
           </li>
           <li>
-            <strong>Sensory-Friendly Environment:</strong> Minimize noise,
-            adjust lighting, or provide quiet spaces to help employees stay
-            focused and comfortable.
+            <strong>Occupational Therapy:</strong> Teaches essential life skills
+            such as dressing, feeding, and hygiene.
           </li>
           <li>
-            <strong>Structured Onboarding:</strong> Create a predictable
-            onboarding process with mentorship or job coaching to ease
-            transitions.
+            <strong>Social Skills Training:</strong> Aims to help children
+            understand and respond appropriately to social cues.
+          </li>
+        </ul>
+        <p className="mt-4 text-lg">
+          These therapies are often most effective when started early and
+          integrated into a child’s daily routine. Additionally, therapies can
+          be customized to meet the individual needs of the child.
+        </p>
+      </section>
+
+      {/* Government Support Available */}
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold text-gray-700 mb-4">
+          Government Support Available
+        </h2>
+        <p className="text-lg">
+          In addition to private resources, there is government support
+          available to families of children with autism in Pakistan:
+        </p>
+        <ul className="list-disc pl-6 text-lg">
+          <li>
+            <strong>Disability Certificate & Special CNIC:</strong> Required to
+            access government support services such as financial assistance and
+            healthcare.
           </li>
           <li>
-            <strong>Ongoing Training:</strong> Educate staff about autism and
-            neurodiversity to foster understanding and reduce stigma.
+            <strong>Pakistan Bait-ul-Maal (PBM) Support:</strong> Offers
+            financial and in-kind support for families with one or more disabled
+            members.
+          </li>
+          <li>
+            <strong>Special Education Support:</strong> The Higher Education
+            Commission (HEC) offers disability quotas and additional support for
+            children pursuing higher education.
+          </li>
+        </ul>
+        <p className="mt-4 text-lg">
+          Parents are encouraged to apply for these resources to receive support
+          and reduce the financial burden of raising a child with autism.
+        </p>
+      </section>
+
+      {/* Debunking Misconceptions About Autism */}
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold text-gray-700 mb-4">
+          Debunking Misconceptions About Autism
+        </h2>
+        <p className="text-lg">
+          There are many myths and misconceptions about autism that can cause
+          confusion and stigmatization. It's important for parents to understand
+          the following facts:
+        </p>
+        <ul className="list-disc pl-6 text-lg">
+          <li>
+            <strong>Autism is not caused by bad parenting or vaccines.</strong>{" "}
+            It is a neurodevelopmental disorder with genetic and environmental
+            factors.
+          </li>
+          <li>
+            <strong>People with autism do not lack empathy.</strong> They often
+            have difficulty understanding social cues but are capable of deep
+            empathy.
+          </li>
+          <li>
+            <strong>Autism is not a temporary condition.</strong> It is
+            lifelong, but individuals with autism can lead meaningful lives with
+            the right support.
+          </li>
+          <li>
+            <strong>
+              Individuals with autism are not intellectually disabled.
+            </strong>{" "}
+            Many people on the spectrum have average or above-average
+            intelligence.
           </li>
         </ul>
       </section>
 
+      {/* Creating a Supportive Environment */}
       <section className="mb-8">
         <h2 className="text-2xl font-semibold text-gray-700 mb-4">
-          Training and Support
+          Creating a Supportive Environment for Your Child
         </h2>
-        <p className="text-gray-600 leading-relaxed mb-4">
-          Training autistic employees effectively involves tailored approaches:
+        <p className="text-lg">
+          Creating a supportive environment for children with autism at home and
+          school is essential. Some strategies include:
         </p>
-        <ul className="list-disc pl-6 text-gray-600 space-y-2">
+        <ul className="list-disc pl-6 text-lg">
+          <li>Making accommodations for sensory sensitivities</li>
+          <li>Providing a structured and predictable routine</li>
           <li>
-            Break tasks into manageable steps and use visual aids to reinforce
-            learning.
-          </li>
-          <li>
-            Provide consistent feedback in a supportive manner to build
-            confidence.
-          </li>
-          <li>
-            Partner with job coaches or vocational programs for personalized
-            guidance.
+            Helping your child develop social skills through guided interaction
           </li>
         </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-gray-700 mb-4">
-          Success Stories
-        </h2>
-        <p className="text-gray-600 leading-relaxed">
-          Companies like SAP and Microsoft have implemented neurodiversity
-          hiring programs, reporting increased innovation and employee
-          satisfaction. For example, SAP’s Autism at Work program has shown how
-          structured support leads to high retention and productivity among
-          autistic employees.
+        <p className="mt-4 text-lg">
+          Working with professionals to create a personalized treatment plan for
+          your child can help them develop the skills they need to succeed.
         </p>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-gray-700 mb-4">
-          Resources for Employers
-        </h2>
-        <ul className="list-disc pl-6 text-gray-600 space-y-2">
-          <li>
-            <a
-              href="https://www.milestones.org/get-started/for-community-at-large/supporting-autistic-employees"
-              className="text-blue-600 hover:underline"
-              target="_blank"
-              rel="noopener noreferrer">
-              Milestones: Supporting Autistic Employees
-            </a>{" "}
-            - Practical tips for workplace inclusion.
-          </li>
-          <li>
-            <a
-              href="https://www.hireautism.org/resource-center/training-autistic-employees/"
-              className="text-blue-600 hover:underline"
-              target="_blank"
-              rel="noopener noreferrer">
-              Hire Autism: Training Autistic Employees
-            </a>{" "}
-            - Guidance on effective training methods.
-          </li>
-          <li>
-            <a
-              href="https://www.neurodiversityhub.org/resources-for-employers"
-              className="text-blue-600 hover:underline"
-              target="_blank"
-              rel="noopener noreferrer">
-              Neurodiversity Hub: Resources for Employers
-            </a>{" "}
-            - Tools and frameworks for neurodiverse workplaces.
-          </li>
-          <li>
-            <a
-              href="https://askearn.org/page/neurodiversity-resources"
-              className="text-blue-600 hover:underline"
-              target="_blank"
-              rel="noopener noreferrer">
-              EARN: Neurodiversity Resources
-            </a>{" "}
-            - Comprehensive employer guides.
-          </li>
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-gray-700 mb-4">
-          Watch and Learn
-        </h2>
-        <p className="text-gray-600 leading-relaxed mb-4">
-          These videos provide valuable insights into supporting autistic
-          employees:
-        </p>
-        <ul className="list-disc pl-6 text-gray-600 space-y-2">
-          <li>
-            <a
-              href="https://www.youtube.com/watch?v=GEohqScaaqY"
-              className="text-blue-600 hover:underline"
-              target="_blank"
-              rel="noopener noreferrer">
-              Supporting Autistic Employees in the Workplace
-            </a>{" "}
-            - Strategies for inclusion.
-          </li>
-          <li>
-            <a
-              href="https://www.youtube.com/watch?v=4CwIwWf0ufE"
-              className="text-blue-600 hover:underline"
-              target="_blank"
-              rel="noopener noreferrer">
-              Autism at Work: Hiring and Supporting Employees
-            </a>{" "}
-            - Real-world examples.
-          </li>
-          <li>
-            <a
-              href="https://www.youtube.com/watch?v=9n_4nX3zWBo&t=110s"
-              className="text-blue-600 hover:underline"
-              target="_blank"
-              rel="noopener noreferrer">
-              Neurodiversity in the Workplace
-            </a>{" "}
-            - Benefits of inclusive hiring.
-          </li>
-        </ul>
       </section>
     </div>
   );

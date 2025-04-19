@@ -60,7 +60,10 @@ const EmployerProfile = () => {
               {user.jobs && user.jobs.length > 0 ? (
                 <div>
                   {user.jobs.map((job, index) => (
-                    <div key={index} className="border-b py-2">
+                    <div
+                      onClick={() => navigate("/employer/applications")}
+                      key={index}
+                      className="border-b py-2">
                       <div className="flex flex-row justify-between">
                         <h3 className="font-semibold text-lg">{job.title}</h3>
                         <MdDeleteOutline

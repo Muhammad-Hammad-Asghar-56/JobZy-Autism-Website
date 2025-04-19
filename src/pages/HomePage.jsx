@@ -6,6 +6,7 @@ import backgroundImage from "../assets/images/bg.jpg";
 import man_suit from "../assets/images/man-suit.jpg";
 import MillionOfJobs from "../components/MillionOfJobs";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 // Main HomePage component
 const HomePage = () => {
@@ -121,8 +122,8 @@ const HomePage = () => {
                 className="bg-blue-50 p-6 rounded-lg text-gray-800 shadow-md hover:shadow-lg transition-shadow hover:bg-black hover:text-white">
                 <h3 className="text-lg font-semibold ">{category.name}</h3>
                 <p className="text-gray-600 mt-1">{category.jobs}</p>
-                <a
-                  href="#"
+                <Link
+                  to={`/jobs/${category.name}`}
                   className="text-blue-500 mt-2 inline-flex items-center hover:underline">
                   Explore Jobs
                   <svg
@@ -137,15 +138,15 @@ const HomePage = () => {
                       d="M9 5l7 7-7 7"
                     />
                   </svg>
-                </a>
+                </Link>
               </div>
             ))}
           </div>
 
           {/* See More Categories Link */}
           <div className="text-center mt-8">
-            <a
-              href="#"
+            <Link
+              to={`/jobs/`}
               className="text-blue-500 inline-flex items-center hover:underline">
               See More Categories
               <svg
@@ -160,7 +161,7 @@ const HomePage = () => {
                   d="M9 5l7 7-7 7"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

@@ -19,6 +19,7 @@ import LearnTest from "./pages/LearnTest";
 import Test from "./pages/Test";
 import AboutAutism from "./pages/AboutAutism";
 import DailyTask from "./pages/DailyTask";
+import ContactPage from "./pages/ContactPage";
 
 export default function App() {
   const { user } = useSelector((state) => state.user);
@@ -42,8 +43,9 @@ export default function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/signup-user" element={<GeneralUserRegister />} />
             <Route path="/signup-employer" element={<EmployerRegister />} />
+            <Route path="/contact" element={<ContactPage />} />
             <Route path="/Learn-autism" element={<AboutAutism />}></Route>
-            <Route path="/jobs" element={<BrowseJobs />} />
+            <Route path="/jobs/:searchedJob?" element={<BrowseJobs />} />
 
             {/* Protected route using AuthWrapper */}
             <Route

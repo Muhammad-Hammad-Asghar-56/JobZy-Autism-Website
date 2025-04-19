@@ -16,7 +16,7 @@ export const userSlice = createSlice({
         },
         // Reset user state and authentication status
         resetUser: (state) => {
-            state._id = "";
+            console.log("removing user")
             state.user = null;
             state.auth = false;
         },
