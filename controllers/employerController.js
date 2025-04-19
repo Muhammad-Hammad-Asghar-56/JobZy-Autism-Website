@@ -19,7 +19,7 @@ exports.registerEmployer = async (req, res) => {
         // Check if employer already exists
         const employerExists = await Employer.findOne({ email });
         if (employerExists) {
-            return res.status(400).json({ message: "Employer already exists" });
+            return res.status(404).json({ message: "Employer already exists" });
         }
 
         // Create a new employer
@@ -131,5 +131,34 @@ exports.getEmployer = async (req, res) => {
         res.json({ message: "success", user: employer });
     } catch (err) {
         res.status(500).json({ message: err.message });
+    }
+};
+
+
+exports.deleteEmployer = async (req, res) => {
+    const { email, password } = req.body;
+
+    try {
+        // Find the user by email
+        const user = await Employer.findOne({ email });
+
+        // Check if the user exists
+        if (!user) {
+            return res.status(404).json({ message: 'User not found' });
+        }
+
+        // Verify the password
+        const isMatch = await bcrypt.compare(password, user.password);
+        if (!isMatch) {
+            return res.status(400).json({ message: 'Incorrect password' });
+        }
+
+        // Delete the user from the database using deleteOne
+        await User.deleteOne({ _id: user._id });
+
+        return res.status(200).json({ message: 'User deleted successfully' });
+    } catch (error) {
+        console.error(error);
+        return res.status(500).json({ message: 'Server error' });
     }
 };

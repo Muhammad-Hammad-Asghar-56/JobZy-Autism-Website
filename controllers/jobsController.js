@@ -191,3 +191,53 @@ exports.getEmployerAppliedJobs = async (req, res) => {
         res.status(500).json({ message: "Internal Server Error" });
     }
 };
+
+
+exports.updateEmployeeStatus = async (req, res) => {
+    const { applicantId, jobId, status } = req.body;
+
+    // Validate the input
+    if (!employeeId || !jobId || !status || !employeeId) {
+        return res.status(400).json({ message: 'Missing required fields' });
+    }
+
+    // Ensure the status is one of the valid ones
+    const validStatuses = ['Pending', 'Hired', 'Rejected'];
+    if (!validStatuses.includes(status)) {
+        return res.status(400).json({ message: 'Invalid status' });
+    }
+
+    try {
+        // Find the job by jobId
+        const job = await Jobs.findOne({ jobId: jobId });
+
+        // If job not found, return error
+        if (!job) {
+            return res.status(404).json({ message: 'Job not found' });
+        }
+
+        // Find the applicant who matches both userId and employeeId
+        const applicant = job.applicants.find(applicant =>
+            applicant._id.toString() === employeeId
+        );
+
+        if (!applicant) {
+            return res.status(404).json({ message: 'Applicant not found for this job' });
+        }
+
+        // Update the applicant's status
+        applicant.status = status;
+
+        // Save the updated job document
+        await job.save();
+
+        // Respond with success
+        return res.status(200).json({
+            message: 'Employee status updated successfully',
+            job: job,
+        });
+    } catch (err) {
+        console.error(err);
+        return res.status(500).json({ message: 'Internal server error' });
+    }
+};
