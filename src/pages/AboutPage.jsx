@@ -12,13 +12,13 @@ const AboutPage = () => {
       <div className="max-w-[1200px] mx-auto bg-white  rounded-lg mt-24 p-6">
         {/* Heading */}
         <h1 className="text-4xl font-bold text-left text-gray-600 mb-6">
-          About Jobzy
+          About SpecWorks
         </h1>
 
         {/* Introduction Section */}
         <section className="mb-8">
           <p className="text-lg text-gray-700 mb-4">
-            Welcome to **Jobzy**, a platform designed to empower individuals
+            Welcome to **SpecWorks**, a platform designed to empower individuals
             with autism in the workforce. Whether you're an employer looking to
             create a more inclusive environment or an employee on the autism
             spectrum seeking career opportunities, we are here to support you.
@@ -34,12 +34,12 @@ const AboutPage = () => {
             Our Mission
           </h2>
           <p className="text-lg text-gray-700">
-            At **Jobzy**, our mission is to empower neurodiverse individuals,
-            especially those on the autism spectrum, by providing the tools,
-            resources, and opportunities they need to succeed in the workplace.
-            We believe that inclusive workplaces not only support individuals
-            with autism but also enhance the overall success and innovation of
-            businesses.
+            At **SpecWorks**, our mission is to empower neurodiverse
+            individuals, especially those on the autism spectrum, by providing
+            the tools, resources, and opportunities they need to succeed in the
+            workplace. We believe that inclusive workplaces not only support
+            individuals with autism but also enhance the overall success and
+            innovation of businesses.
           </p>
         </section>
 
@@ -104,7 +104,7 @@ const AboutPage = () => {
             Meet the Team
           </h2>
           <p className="text-lg text-gray-700 mb-4">
-            Our team at **Jobzy** is dedicated to making the workplace
+            Our team at **SpecWorks** is dedicated to making the workplace
             accessible and inclusive for individuals on the autism spectrum. We
             bring together a diverse range of skills, from experts in autism
             advocacy to HR professionals and mentors, to provide the support
@@ -129,8 +129,8 @@ const AboutPage = () => {
           </p>
           <p className="text-lg text-gray-700">
             Email us at:{" "}
-            <a href="mailto:contact@jobzy.com" className="text-gray-600">
-              contact@jobzy.com
+            <a href="mailto:contact@SpecWorks.com" className="text-gray-600">
+              contact@SpecWorks.com
             </a>
           </p>
         </section>

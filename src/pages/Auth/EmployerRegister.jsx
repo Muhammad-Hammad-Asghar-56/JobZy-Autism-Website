@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ComboBox from "../../components/ComboBox";
 import InputField from "../../components/InputField";
 import EmployerApi from "../../api/employer";
+import { useNavigate } from "react-router-dom";
 
 const EmployerRegister = () => {
   const [formData, setFormData] = useState({
@@ -23,10 +24,11 @@ const EmployerRegister = () => {
       [name]: type === "checkbox" ? checked : value,
     }));
   };
-
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     EmployerApi.registerUser(formData);
+    navigate("/login");
   };
 
   const industryOptions = [

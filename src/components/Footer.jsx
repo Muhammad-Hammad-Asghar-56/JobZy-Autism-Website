@@ -7,7 +7,7 @@ const Footer = () => {
   // Define footer links based on the sitemap
   const { user } = useSelector((state) => state.user);
   const footerLinks = {
-    Jobzy: [
+    SpecWorks: [
       { name: "Home", path: "/" },
       { name: "About Us", path: "/aboutus" },
       { name: "Contact Us", path: "/contact" },
@@ -44,7 +44,7 @@ const Footer = () => {
           {/* Logo and Branding */}
           <div className="mb-8 md:mb-0">
             <Link to="/" className="flex items-center">
-              <img src={logo} alt="Jobzy Logo" className="h-10 mr-3" />
+              <img src={logo} alt="SpecWorks Logo" className="h-10 mr-3" />
               <span className="self-center text-2xl font-semibold text-white">
                 SpecWorks
               </span>
@@ -82,7 +82,7 @@ const Footer = () => {
           <span className="text-sm text-gray-400 sm:text-center">
             © {new Date().getFullYear()}{" "}
             <Link to="/" className="hover:underline">
-              Jobzy™
+              SpecWorks™
             </Link>
             . All Rights Reserved.
           </span>

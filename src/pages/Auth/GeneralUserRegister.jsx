@@ -4,6 +4,7 @@ import InputField from "../../components/InputField";
 import ComboBox from "../../components/ComboBox";
 import UserApi from "../../api/user";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 const GeneralUserRegister = () => {
   const dispatch = useDispatch();
   // State to manage form data
@@ -33,13 +34,14 @@ const GeneralUserRegister = () => {
       [name]: type === "checkbox" ? checked : value,
     }));
   };
-
+  const navigate = useNavigate();
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form Data:", formData);
     // Add your form submission logic here (e.g., API call)
     UserApi.registerUser(formData, dispatch);
+    navigate("/login");
   };
 
   // Options for dropdowns
